@@ -287,6 +287,9 @@ em { font-style: normal; }
 .game-hero .tags li { color: #fff; border-color: rgba(255, 255, 255, .3); background: rgba(11, 13, 18, .35); font-size: 14px; padding: 4px 15px; }
 .game-hero .tags .tags__status { color: var(--gold); border-color: rgba(214, 179, 110, .6); }
 
+.play { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 40px; }
+.play__note { flex-basis: 100%; margin-top: 4px; font-size: 14px; color: var(--text-light); }
+
 .overview__grid { display: grid; grid-template-columns: 1.4fr .6fr; gap: 88px; align-items: start; }
 .overview .title { font-size: clamp(26px, 3vw, 40px); line-height: 1.35; }
 .overview .lead { margin-top: 28px; max-width: 38em; }
