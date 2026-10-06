@@ -338,3 +338,22 @@ em { font-style: normal; }
   .feature { padding: 30px 26px 34px; }
   .pager__link { padding: 32px 20px; }
 }
+
+/* ───────── 프로토타입 (메인 페이지) ───────── */
+.prototypes { padding-top: 0; }
+.prototypes .wrap { border-top: 1px solid var(--line-dark); padding-top: 120px; }
+.games__grid--proto { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.games__grid--proto .game__body { padding: 28px 28px 32px; }
+.games__grid--proto .game__no { padding-right: 100px; }
+.games__grid--proto .game h3 { font-size: 25px; }
+.games__grid--proto .game p { font-size: 15px; }
+.games__grid--proto .status { top: 30px; right: 28px; }
+@media (max-width: 1000px) {
+  .prototypes .wrap { padding-top: 90px; }
+  .games__grid--proto { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .prototypes .wrap { padding-top: 70px; }
+  .games__grid--proto .game__body { padding: 26px 24px 30px; }
+  .games__grid--proto .status { top: 28px; right: 24px; }
+}
