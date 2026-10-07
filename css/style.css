@@ -357,3 +357,31 @@ em { font-style: normal; }
   .games__grid--proto .game__body { padding: 26px 24px 30px; }
   .games__grid--proto .status { top: 28px; right: 24px; }
 }
+
+/* ── 접속 잠금 (js/gate.js) ── */
+html:not(.is-unlocked) { overflow: hidden; }
+html:not(.is-unlocked) body { visibility: hidden; }
+.gate {
+  visibility: visible;
+  position: fixed; inset: 0; z-index: 1000;
+  display: grid; place-items: center;
+  padding: 24px;
+  background: var(--night);
+  color: #fff;
+  overflow-y: auto;
+}
+.gate__box { width: 100%; max-width: 360px; display: grid; gap: 16px; }
+.gate__box img { margin: 0 auto; }
+.gate__title { font-family: var(--serif); font-weight: 500; font-size: 34px; letter-spacing: 0; text-align: center; }
+.gate__lead { color: var(--text-light); font-size: 15px; text-align: center; margin-bottom: 8px; }
+.gate__field { display: grid; gap: 6px; }
+.gate__field span { font-size: 13px; letter-spacing: .12em; color: var(--gold); }
+.gate__field input {
+  width: 100%; padding: 13px 16px;
+  background: var(--night-2); color: #fff;
+  border: 1px solid var(--line-dark); border-radius: 6px;
+  font: inherit;
+}
+.gate__field input:focus-visible { outline-offset: 0; border-color: var(--gold); }
+.gate__error { color: #f0a08c; font-size: 14px; }
+.gate .btn { justify-content: center; margin-top: 8px; cursor: pointer; font: inherit; font-weight: 600; }
